@@ -1,0 +1,122 @@
+h1,h2,h3,h4,h5 {
+    color :#8E24AA;
+}
+
+a,
+a:hover{
+    color: #8E24AA;;
+}
+
+.image-team {
+    height: 240px;
+    border-radius: 8px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.bg-dark-custom  {
+    background-color: #131313;
+}
+
+.bg-jagongoding{
+    background-image:url("../image/bg.jpg") ;
+    background-size: cover;
+    border-radius: 0px;
+}
+
+.backdrop-wrapper {
+    position: relative;
+}
+
+.backdrop{
+    background-color: #8E24AA;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.card{
+    border:none;
+
+    position:relative;
+    overflow:hidden;
+    border-radius:8px;
+}
+
+.card:before{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:#E1BEE7;
+    transform:scaleY(1);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:after{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:#8E24AA;
+    transform:scaleY(0);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:hover::after{
+    transform:scaleY(1);
+}
+
+
+.social-list{
+    display:flex;
+    list-style:none;
+    justify-content:center;
+    padding:0;
+}
+
+.social-list li{
+    padding:10px;
+    font-size:19px;
+}
+
+.social-list li a{
+    padding:10px;
+    color:#8E24AA;
+    font-size:19px;
+}
+
+.buttons button:nth-child(1),
+.buttons a:nth-child(1) button{
+       border:1px solid #8E24AA !important;
+       color:#8E24AA;
+       height:40px;
+       background-color: transparent;
+}
+
+.buttons button:nth-child(1):hover,
+.buttons a:nth-child(1) button:hover{
+       border:1px solid #8E24AA !important;
+       color:#fff;
+       height:40px;
+       background-color:#8E24AA !important;
+}
+
+.buttons button:nth-child(2),
+.buttons a:nth-child(2) button{
+       border:1px solid #8E24AA !important;
+       background-color:#8E24AA !important;
+       color:#fff;
+       height:40px;
+}
